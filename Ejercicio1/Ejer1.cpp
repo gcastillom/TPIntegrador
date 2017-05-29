@@ -15,51 +15,63 @@ int main() {
 	int valorp;
 	int valorq;
 	int valorr;
-
-	cout
-			<< "En este punto se deberá escribir un programa que interactúa con el usuario para asignar el valor de verdad a un conjunto de proposiciones lógicas, luego el sistema con la información que ingresa el usuario, debe resolver el valor de verdad de la implicación lógica e informar por pantalla el resultado de la misma\n\n";
-
-	cout << "Implicación lógica 1: \n\n";
-
-	cout << "p= Una persona pertenece al partido político \n";
-	cout << "q= Cuenta con el aval del 2% de los afiliados a dicho partido\n";
-	cout << "r= La persona puede ser precandidato\n\n";
-
-	cout << "Implicación lógica a determinar valor de verdad: \n"
-			"p ^ q => r\n";
-
-	cout << "Ingresar el valor de verdad de la proposición p\n"
-			"1. Verdadero\n"
-			"2. Falso\n";
-	do {
-		cin >> valorp;
-		if (valorp < 1 || valorp > 2)
-			cout << "Ingrese una opción válida\n\n";
-	} while (valorp < 1 || valorp > 2);
-
-	cout << "Ingresar el valor de verdad de la proposición q\n"
-			"1. Verdadero\n"
-			"2. Falso\n";
-	do {
-		cin >> valorq;
-		if (valorq < 1 || valorq > 2)
-			cout << "Ingrese una opción válida\n\n";
-	} while (valorq < 1 || valorq > 2);
-
-	cout << "Ingresar el valor de verdad de la proposición r\n"
-			"1. Verdadero\n"
-			"2. Falso\n";
+	int valors;
+	char repetira;
+	char repetirb;
 
 	do {
-		cin >> valorr;
-		if (valorr < 1 || valorr > 2)
-			cout << "Ingrese una opción válida\n\n";
-	} while (valorr < 1 || valorr > 2);
+		cout
+				<< "En este punto se deberá escribir un programa que interactúa con el usuario para asignar el valor de verdad a un conjunto de proposiciones lógicas, luego el sistema con la información que ingresa el usuario, debe resolver el valor de verdad de la implicación lógica e informar por pantalla el resultado de la misma\n\n";
 
-	if (valorp == 1 && valorq == 1 && valorr == 2)
-		cout << "La implicación lógica es falsa\n\n\n";
-	else
-		cout << "La implicación lógica es verdadera\n\n\n";
+		cout << "Implicación lógica 1: \n\n";
+
+		cout << "p= Una persona pertenece al partido político \n";
+		cout
+				<< "q= Cuenta con el aval del 2% de los afiliados a dicho partido\n";
+		cout << "r= La persona puede ser precandidato\n\n";
+
+		cout << "Implicación lógica a determinar valor de verdad: \n"
+				"p ^ q => r\n\n";
+
+		cout << "Ingresar el valor de verdad de la proposición p\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+		do {
+			cin >> valorp;
+			if (valorp < 1 || valorp > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valorp < 1 || valorp > 2);
+
+		cout << "Ingresar el valor de verdad de la proposición q\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+		do {
+			cin >> valorq;
+			if (valorq < 1 || valorq > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valorq < 1 || valorq > 2);
+
+		cout << "Ingresar el valor de verdad de la proposición r\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+
+		do {
+			cin >> valorr;
+			if (valorr < 1 || valorr > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valorr < 1 || valorr > 2);
+
+		if (valorp == 1 && valorq == 1 && valorr == 2)
+			cout << "La implicación lógica es falsa\n\n\n";
+		else
+			cout << "La implicación lógica es verdadera\n\n\n";
+
+		cout
+				<< "¿Desea ingresar otros valores? Pulse cualquiero tecla para continuar o 0 para salir\n";
+
+		cin >> repetira;
+
+	} while (repetira != 48);
 
 	cout << "Implicación lógica 2: \n\n";
 
@@ -71,40 +83,59 @@ int main() {
 	cout << "s= El voto se considerará nulo.\n\n";
 
 	cout << "Implicación lógica a determinar valor de verdad: \n"
-			"p v q v r => s\n";
-
-	cout << "Ingresar el valor de verdad de la proposición p\n"
-			"1. Verdadero\n"
-			"2. Falso\n";
-	do {
-		cin >> valorp;
-		if (valorp < 1 || valorp > 2)
-			cout << "Ingrese una opción válida\n\n";
-	} while (valorp < 1 || valorp > 2);
-
-	cout << "Ingresar el valor de verdad de la proposición q\n"
-			"1. Verdadero\n"
-			"2. Falso\n";
-	do {
-		cin >> valorq;
-		if (valorq < 1 || valorq > 2)
-			cout << "Ingrese una opción válida\n\n";
-	} while (valorq < 1 || valorq > 2);
-
-	cout << "Ingresar el valor de verdad de la proposición r\n"
-			"1. Verdadero\n"
-			"2. Falso\n";
+			"p v q v r => s\n\n";
 
 	do {
-		cin >> valorr;
-		if (valorr < 1 || valorr > 2)
-			cout << "Ingrese una opción válida\n\n";
-	} while (valorr < 1 || valorr > 2);
 
-	if (valorp == 2 && valorq == 2 && valorr == 2)
-		cout << "La implicación lógica 2 es verdadera\n";
-	else
-		cout << "La implicación lógica 2 es falsa\n";
+		cout << "Ingresar el valor de verdad de la proposición p\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+		do {
+			cin >> valorp;
+			if (valorp < 1 || valorp > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valorp < 1 || valorp > 2);
+
+		cout << "Ingresar el valor de verdad de la proposición q\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+		do {
+			cin >> valorq;
+			if (valorq < 1 || valorq > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valorq < 1 || valorq > 2);
+
+		cout << "Ingresar el valor de verdad de la proposición r\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+
+		do {
+			cin >> valorr;
+			if (valorr < 1 || valorr > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valorr < 1 || valorr > 2);
+
+		cout << "Ingresar el valor de verdad de la proposición s\n"
+				"1. Verdadero\n"
+				"2. Falso\n";
+
+		do {
+			cin >> valors;
+			if (valors < 1 || valors > 2)
+				cout << "Ingrese una opción válida\n\n";
+		} while (valors < 1 || valors > 2);
+
+		if ((valorp == 1 || valorq == 1 || valorr == 1) && valors == 2)
+			cout << "La implicación lógica 2 es falsa\n";
+		else
+			cout << "La implicación lógica 2 es verdadera\n";
+
+		cout
+				<< "¿Desea ingresar otros valores? Pulse cualquiero tecla para continuar o 0 para salir\n";
+
+		cin >> repetirb;
+
+	} while (repetirb != 48);
 
 	return 0;
 }
