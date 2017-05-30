@@ -22,10 +22,11 @@ int main() {
 
 		cout << "Implicacion logica a determinar valor de verdad: \n"
 				"p ^ q => r\n\n";
-
+		
 		cout << "Ingresar el valor de verdad de la proposicion p\n"
 				"1. Verdadero\n"
 				"2. Falso\n";
+		//Si el usuario ingresa otro valor que no sea 1 o 2:
 		do {
 			cin >> valorp;
 			if (valorp < 1 || valorp > 2)
